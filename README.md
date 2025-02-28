@@ -1,3 +1,5 @@
+(Quick disclaimer, this is a program and concept in testing, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs!)
+
 # Dipper
 Dipper HF Datamode
 
