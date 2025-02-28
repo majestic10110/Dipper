@@ -145,7 +145,7 @@ There may be a newer version link on Github https://github.com/majestic10110/Dip
 
 ​
 
-(there is not as yet a consumer friendly installation .exe for this, it is hoped someone will package one up with more knowledge than me. Currently the Python script is offered. If you go to www.python.org and download the latest one and install the libraries for the program, you should be good to go.) If you have not used GROK3 or Chat GPT you can paste the code in there and ask it how to make it work and it will tell you. 
+(there is not as yet a consumer friendly installation .exe for this, it is hoped someone will package one up with more knowledge than me. Currently the Python script is offered. If you go to www.python.org and download the latest one and install the libraries for the program, you should be good to go.) If you have not used python before search and use GROK3 or Chat GPT you can paste the code in there and ask it how to make it work and it will tell you. 
 
 ​
 
