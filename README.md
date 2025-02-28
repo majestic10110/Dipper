@@ -149,6 +149,52 @@ There may be a newer version link on Github https://github.com/majestic10110/Dip
 
 (there is not as yet a consumer friendly installation .exe for this, it is hoped someone will package one up with more knowledge than me. Currently the Python script is offered. If you go to www.python.org and download the latest one and install the libraries for the program, you should be good to go.) If you have not used python before search and use GROK3 or Chat GPT you can paste the code in there and ask it how to make it work and it will tell you. 
 
-​
+​Version 4 Incorporates a Robust mode, the technical specifications of which are listed below:
+
+Robust mode (speed setting "Robust" at ~20-40 WPM) is an advanced transmission mode in the script, designed for reliable communication with error correction and retransmission capabilities. Here are its key technical features:
+
+Convolutional Coding:
+Description: Each message is encoded using a simple convolutional code with a constraint length of 2 (state machine with CONV_TABLE).
+Purpose: Adds redundancy to detect and correct bit errors during transmission.
+Implementation: convolutional_encode doubles the bit length, mapping input bits to output pairs.
+
+
+Interleaving:
+Description: Bits are rearranged in 16-bit blocks using a 4x4 matrix pattern (interleave).
+Purpose: Spreads burst errors across the message, improving error correction effectiveness.
+Implementation: Shuffles bits to mitigate consecutive errors from noise.
+
+Symbol Mapping:
+Description: Encoded bits are grouped into 4-bit chunks, mapped to 16 unique audio symbols (A, B, C, ..., Q) from V4_SYMBOLS.
+Purpose: Converts binary data into audio tones for transmission.
+Implementation: Each symbol corresponds to a distinct sound pattern (tone, slide, or trill).
+
+Preamble:
+Description: A fixed sequence of 7 tones ("1357924") precedes each message.
+Purpose: Signals the start of a Robust mode transmission for receiver synchronization.
+Implementation: Generated and detected via generate_sound and detect_v4_preamble.
+
+CRC-16 Checksum:
+Description: A 16-bit cyclic redundancy check is appended to each message.
+Purpose: Ensures data integrity by verifying the received message against corruption.
+Implementation: Calculated with crcmod and split into four 4-bit symbols.
+Automatic Repeat Request (ARQ):
+
+Description: Uses ACK ("K") and NACK ("N") signals for retransmission control.
+Purpose: Guarantees reliable delivery; retransmits only on explicit NACK.
+Implementation: transmit_loop waits 0.2s for rx_ack, re-queues if "N", resets otherwise.
+Viterbi Decoding:
+
+Description: Received symbols are decoded using the Viterbi algorithm to recover the original bits.
+Purpose: Corrects errors introduced during transmission by finding the most likely bit sequence.
+Implementation: viterbi_decode processes deinterleaved bits with a trellis path.
+
+Audio Transmission:
+Description: Symbols are sent as 50ms audio tones at ~20-40 WPM, with distinct frequencies and patterns.
+Purpose: Enables robust audio communication over noisy channels.
+Implementation: Uses generate_sound with pyaudio for output.
+
+Summary:
+Robust mode employs a sophisticated error-correcting system with convolutional coding, interleaving, and Viterbi decoding, combined with CRC-16 for integrity and ARQ for reliability. It sends data as a single, preamble-led audio burst, making it ideal for challenging conditions, though it’s slower (~20-40 WPM) than Turbo mode due to its redundancy and retransmission features.
 
 
