@@ -1,4 +1,4 @@
-(Quick disclaimer, this is a program and concept in testing, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs! As of DIPPERV4 its not been connected to a rig, the protocol seems good, is piping out audio as it should, work ongoing on piping that audio data out to a rig and some cat commands.)
+(Quick disclaimer, this is a program and concept in testing, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs! As of DIPPERV4.1CAT Tx control of rig IC-703 implemented and generic slot for your radio details, this version is TXing audio out and dropping TX immediately, receive window needs work, but ready for testing!) 
 
 # Dipper
 Dipper HF Datamode
