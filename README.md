@@ -5,7 +5,7 @@ Dipper HF Datamode
 
 
 ABOUT
-Dipper Mode is a custom, World first in bio-inspired audio-based digital communication mode designed by M0OLI for amateur radio operation over high-frequency (HF) bands via single-sideband (SSB) modulation. Inspired by the American Dipper bird’s (Cinclus cinclus) warbling song, it uses the song which has evolved to cut through literal waterfall and rapid noise and encodes text into melodic sound patterns for transmission and reception, optimized for noise resilience and versatility. This specification outlines its technical characteristics, including signal structure, encoding, error correction, and performance metrics, as implemented in a Python-based system.
+Dipper Mode is a custom, World first in bio-inspired audio-based digital communication mode designed by M0OLI for amateur radio operation over high-frequency (HF) bands via single-sideband (SSB) modulation. Inspired by the American Dipper bird’s (Cinclus cinclus) warbling song, it uses the song which has evolved to cut through literal waterfall and rapid noise and encodes text into melodic sound patterns for transmission and reception, optimized for noise resilience and versatility. This specification outlines its technical characteristics, including signal structure, encoding, error correction, and performance metrics, as implemented in a Python-based system. In addition to several FSK normal modes there is now a super advanced Robust mode featuring multiple discrete frequency shifts, multiple error correction methods along with that waterfall piercing Dipper sound!
 
 ​
 
