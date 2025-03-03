@@ -1,3 +1,3 @@
 Python version tested on 3.13.2
 DIpperV4+ pip install pyaudio numpy scipy reedsolo crcmod pyserial 
-DipperReceive+ pip install pyaudio numpy scipy matplotlib
+DipperReceive+ pip install pyaudio numpy scipy matplotlib scikit-learn
