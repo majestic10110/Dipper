@@ -1,4 +1,4 @@
-WARNING: Do not use this for live transmission yet, The current tonal generator exceeds permitted bandwidth, work is ongoing to reduce this to around 2400Hz 
+WARNING: Do not use any file below DipperV4.23 this for live transmission, The current tonal generator exceeds permitted bandwidth, work is ongoing to reduce this to around 2400Hz (FIXED with Dipper 4.23ALPHA1.1.py)
 
 DipperV4.22 is latest Alpha, recommended to start here 
 
