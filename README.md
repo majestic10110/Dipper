@@ -1,6 +1,8 @@
 WARNING: Do not use any file below DipperV4.23 for live transmission, The current tonal generator exceeds permitted bandwidth, work is ongoing to reduce this to around 2400Hz (FIXED with Dipper 4.23ALPHA1.1.py)
 
-DipperV4.22 is latest Alpha, recommended to start here 
+DipperV4.23 is latest Alpha, recommended to start here 
+
+DipperReceiverV1.1 is an experimental AI decoder
 
 (Quick disclaimer, this is a program and concept in testing, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs! As of DIPPERV4.1CAT successful Tx control/recieve of rig IC-703 with digirig connected implemented, and generic slot for your radio details, this version is TXing audio out and dropping TX immediately after send as expected, receive window needs work, but ready for testing!) 
 
