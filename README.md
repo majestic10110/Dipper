@@ -135,27 +135,13 @@ Speed Trade-off: FEC reduces speed (~6–13 wpm vs. 10–20 wpm without), favori
 
 Symbol Limit: 102 symbols fit within GF(2^8), expandable with larger RS codes if needed.
 
-​
-
-Dipper is FREE and opensource, you may do what you wish with it if you find it useful, under the understanding it always remains FREE to end users. 
-
-​
-
-To download DIPPERV2.2_with_FEC - the python script visit https://mega.nz/file/anhDVCDC#ereDwuJu9ZbZlmevE1xlKizNQ2ZXUNbytP6UI8l_O40
-
-​
-
- 
-
-​
-
 There may be a newer version link on Github https://github.com/majestic10110/Dipper
 
 ​
 
 (there is not as yet a consumer friendly installation .exe for this, it is hoped someone will package one up with more knowledge than me. Currently the Python script is offered. If you go to www.python.org and download the latest one and install the libraries for the program, you should be good to go.) If you have not used python before search and use GROK3 or Chat GPT you can paste the code in there and ask it how to make it work and it will tell you. 
 
-​Version 4 Incorporates a Robust mode, the technical specifications of which are listed below:
+​Version 4.23 Incorporates a Robust mode, the technical specifications of which are listed below:
 
 Robust mode (speed setting "Robust" at ~20-40 WPM) is an advanced transmission mode in the script, designed for reliable communication with error correction and retransmission capabilities. Here are its key technical features:
 
