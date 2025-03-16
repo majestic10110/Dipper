@@ -4,7 +4,7 @@ DipperV4.23 is latest Alpha, recommended to start here
 
 DipperReceiverV1.1 is an experimental AI decoder
 
-(Quick disclaimer, this is a program and concept in testing, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs! As of DIPPERV4.1CAT successful Tx control/recieve of rig IC-703 with digirig connected implemented, and generic slot for your radio details, this version is TXing audio out and dropping TX immediately after send as expected, receive window needs work, but ready for testing!) 
+(Quick disclaimer, this is a program and concept in testing with some serious work to do for the decode side, it is hoped that someone with more technical skill than me could refine and make it easier to install as well as perhaps iron out any bugs! As of DIPPERV4.1CAT successful Tx control/recieve of rig IC-703 with digirig connected implemented, and generic slot for your radio details, this version is TXing audio out and dropping TX immediately after send as expected, receive window needs work, but ready for testing!) 
 
 # Dipper
 Dipper HF Datamode
